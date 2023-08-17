@@ -15,12 +15,16 @@ export default function RootLayout({
   const header = (
     <header>
       <div className="text-center bg-slate-400 p-8 my-6 rounded-sm">
-        <Image alt="Lumo GDL" src="/logo.png" width={50} height={50} className="mx-auto rounded-md"/>
+        <Link href="/">
+          <Image alt="Lumo GDL" src="/logo.png" width={50} height={50} className="mx-auto rounded-md"/>
+        </Link>
         <Link href="/">
           <h1 className="text-2xl text-white font-bold mt-4">Lumo GDL</h1>
         </Link>
         <p className="text-slate-600">🎮 Welcome to my <strong>game dev log</strong>. 💻 </p>
-        <Image className="rounded-sm mt-6 transition ease-in-out hover:scale-105" alt="code_image" src="/images/top_bg.png" width={896} height={250}/>
+        <Link href="/">
+          <Image className="rounded-sm mt-6 transition ease-in-out hover:scale-105" alt="code_image" src="/images/top_bg.png" width={896} height={250}/>
+        </Link>
       </div>
     </header>
   );

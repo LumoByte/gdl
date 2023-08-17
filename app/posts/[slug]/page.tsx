@@ -26,7 +26,7 @@ const PostPage = (props: any) => {
     const slug = props.params.slug; // params.whatever you put inside the square brackets [dynamic directory] goes here
     const post = getPostContent(slug);
     return (
-        <div className="mx-auto max-w-4xl px-20">
+        <div className="mx-auto max-w-4xl md:px-20">
             <div className="my-12 text-center">
                 <h1 className="text-2x1 text-blue-400">
                     {post.data.title}
